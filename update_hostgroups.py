@@ -111,7 +111,7 @@ def parse_input_file(filename):
                 # Skip first line and invalid lines
                 if line_no < 1 or len(columns) < 5:
                     continue
-                host_name = columns[0]
+                host_name = columns[0].lower()
                 itogroup = columns[1]
                 urelt = columns[2]
                 priority = columns[3]
